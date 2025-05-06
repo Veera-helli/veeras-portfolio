@@ -22,7 +22,7 @@ export default function OpportunitiesSection() {
   return (
     <section className="py-24">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">
+        <h2 className="text-3xl font-bold mb-8 text-center font-montserrat">
           Looking for Professional Opportunities in
         </h2>
         <div className="grid gap-6">
@@ -31,7 +31,7 @@ export default function OpportunitiesSection() {
               key={opportunity.title}
               className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-xl font-semibold mb-2 font-montserrat">
                 {opportunity.title}
               </h3>
               <p className="text-gray-600">

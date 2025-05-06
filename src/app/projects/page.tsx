@@ -21,7 +21,7 @@ export default function Projects() {
 
   return (
     <main className="min-h-screen p-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl px-4 mx-auto">
         <h1 className="text-4xl font-bold mb-8">My Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (

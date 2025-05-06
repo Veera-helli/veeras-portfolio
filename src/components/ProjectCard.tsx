@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, imageUrl, projectUrl, technologies }: ProjectCardProps) {
   return (
-    <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+    <Link href={projectUrl} className="border border-tertiary rounded-lg overflow-hidden hover:shadow-lg transition-shadow bg-white">
       <div className="relative h-48">
         <Image
           src={imageUrl}
@@ -27,19 +27,13 @@ export default function ProjectCard({ title, description, imageUrl, projectUrl, 
           {technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-gray-100 rounded-full text-sm"
+              className="px-3 py-1 bg-secondary rounded-full text-sm"
             >
               {tech}
             </span>
           ))}
         </div>
-        <Link
-          href={projectUrl}
-          className="text-blue-600 hover:text-blue-800 font-medium"
-        >
-          View Project →
-        </Link>
       </div>
-    </div>
+    </Link>
   );
 } 

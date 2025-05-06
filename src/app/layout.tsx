@@ -1,22 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const openSans = Open_Sans({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-opensans",
 });
 
 export const metadata: Metadata = {
   title: "Veera Ihalainen's Portfolio",
   description: "Showcasing projects and experiences",
+  icons: {
+    icon: '/images/icon.png',
+    apple: '/images/icon.png',
+  },
 };
 
 export default function RootLayout({
@@ -25,10 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
+      <body className={`${openSans.className}`}>
         <Header />
         {children}
         <Footer />
