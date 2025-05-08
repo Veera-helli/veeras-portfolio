@@ -1,51 +1,51 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import SShapeText from './sshapetext';
+
 export default function Contact() {
   return (
-    <main className="min-h-screen p-8">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-8">Contact Me</h1>
-        <div className="bg-white rounded-lg shadow-sm p-6">
-          <form className="space-y-6">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-              />
+    <main className="min-h-screen mt-4 p-8 max-w-4xl mx-auto">
+      <div className="flex flex-row gap-8">
+        <div className="flex flex-col justify-center relative">
+          <div className="relative w-[400px] h-[505px] transition-all duration-300">
+
+            <Image 
+              src="/blob.svg" 
+              alt="Blob"
+              id="blob"
+              className="absolute top-35 z-0 left-30 rotate-20 scale-250" 
+              width={270} 
+              height={300} 
+            />
+
+            <Image 
+              src="/images/profile_square.png" 
+              alt="Profile" 
+              id="profile"
+              className="absolute z-10 left-0 rounded-full -rotate-12 shadow-sm" 
+              width={300} 
+              height={300} 
+            />
+
+            <div className="absolute z-4 top-55 left-18 -rotate-5">
+              <SShapeText />
             </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-            >
-              Send Message
-            </button>
-          </form>
+
+            <Image 
+              src="/images/poro_square.png" 
+              alt="raindeer" 
+              id="poro"
+              className="absolute z-10 left-40 top-80 rounded-full shadow-sm" 
+              width={200} 
+              height={200} 
+            />
+          </div>
         </div>
+          <div className="flex flex-col justify-start items-start pt-20 z-100">
+            <h1 className="text-3xl font-bold mb-4">Contact Information</h1>
+            <p className="text-md my-1">Email: <Link href="mailto:veera.helli@gmail.com" target="_blank" rel="noopener noreferrer" className="underline">veera.helli@gmail.com</Link></p>
+            <p className="text-md my-1">LinkedIn: <Link href="https://www.linkedin.com/in/veera-ihalainen/" target="_blank" rel="noopener noreferrer" className="underline">Veera Ihalainen</Link></p>
+          </div>
       </div>
     </main>
   );

@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   title: "Veera Ihalainen's Portfolio",
   description: "Showcasing projects and experiences",
   icons: {
-    icon: '/images/icon.png',
-    apple: '/images/icon.png',
+    icon: '/images/VI_icon.png',
+    apple: '/images/VI_icon.png',
   },
 };
 
@@ -32,6 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable} ${openSans.variable}`}>
+      <head>
+        <link rel="icon" href="/images/VI_icon.png" sizes="any" />
+        <link rel="apple-touch-icon" href="/images/VI_icon.png" />
+      </head>
       <body className={`${openSans.className}`}>
         <Header />
         {children}

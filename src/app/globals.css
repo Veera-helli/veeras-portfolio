@@ -8,6 +8,7 @@
   --medium-slate-blue: #736CED;
   --auburn: #871D20;
   --foreground: ;
+  --pure-white: #FFFFFF;
 }
 
 
@@ -22,6 +23,7 @@
   --color-tertiary: var(--thistle);
   --color-white: var(--ghost-white);
   --color-red: var(--auburn);
+  --color-pure-white: var(--pure-white);
   --text-xl: 23px;
 }
 
