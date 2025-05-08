@@ -20,13 +20,14 @@ export default function ProfessionalIntroSection() {
         <div className="flex gap-4 mt-4">
           <a
             href={`mailto:${email}`}
-            className="bg-red-900 text-white px-6 py-3 rounded-lg font-semibold text-lg shadow hover:bg-red-950 transition"
+            className="bg-red-900 text-white px-6 py-3 rounded-lg font-semibold text-lg shadow hover:bg-red-950 transition-all duration-300"
           >
             Email me →
           </a>
           <button
             onClick={handleCopy}
-            className="bg-white border border-red-800 text-red-950 px-6 py-3 rounded-lg font-semibold text-lg shadow hover:bg-gray-100 transition"
+            className="bg-white border border-red-800 text-red-950 px-6 py-3 rounded-lg 
+            font-semibold text-lg shadow hover:bg-gray-50 hover:text-secondary hover:cursor-pointer hover:border-secondary transition-all duration-300"
           >
             {copied ? 'Copied!' : 'Copy email'}
           </button>

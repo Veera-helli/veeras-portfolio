@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function HighlightsSection() {
   const highlights = [
     {
-      title: "Service Design",
-      description: "Designing seamless, user-centered services that bridge business goals and customer needs.",
+      title: "Frontend Development",
+      description: "Proficient in multiple JavaScript and TypeScript frameworks, including React, Angular. I build responsive and user-friendly web applications.",
       image: "/images/service_design_icon.png",
     },
     {
@@ -20,13 +20,12 @@ export default function HighlightsSection() {
   ];
 
   return (
-    <section className="max-w-5xl mx-auto py-16 px-4">
-      <h1 className="text-3xl md:text-4xl font-bold font-montserrat mb-10 text-center">Experiences</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section className="max-w-5xl mx-auto py-26 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {highlights.map((item) => (
           <div
             key={item.title}
-            className="bg-white rounded-xl shadow p-8 flex flex-col items-center text-center hover:shadow-lg transition"
+            className="bg-background rounded-xl shadow p-8 flex flex-col items-center text-center hover:shadow-lg transition"
           >
             <Image src={item.image} alt={item.title} width={200} height={200} />
             <h2 className="text-xl font-semibold font-montserrat mb-4">{item.title}</h2>

@@ -4,6 +4,7 @@
   --champagne-pink: #EED7C5;
   --ghost-white: #f4edeb;
   --thistle: #C89F9C;
+  --thistle-dark: #98726f;
   --tropical-indigo: #9F9FED;
   --medium-slate-blue: #736CED;
   --auburn: #871D20;
@@ -17,8 +18,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-primary: var(--medium-slate-blue);
-  --color-secondary: var(--tropical-indigo);
+  --color-primary: var(--auburn);
+  --color-secondary: var(--thistle-dark);
   --color-tertiary: var(--thistle);
   --color-white: var(--ghost-white);
   --color-red: var(--auburn);
@@ -31,3 +32,4 @@ body {
   color: var(--color-red-950);
   font-family: "Helvetica", sans-serif;
 }
+

@@ -29,16 +29,16 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6 font-semibold text-red-950">
-            <Link href="/" className="hover:text-red-900">
+            <Link href="/" className="hover:text-primary hover:-skew-4  transition-all duration-100">
               Home
             </Link>
-            <Link href="/about" className="hover:text-red-900">
+            <Link href="/about" className="hover:text-primary hover:-skew-4 transition-all duration-100">
               About
             </Link>
-            <Link href="/projects" className="hover:text-red-900">
+            <Link href="/projects" className="hover:text-primary hover:-skew-4  transition-all duration-100">
               Projects
             </Link>
-            <Link href="/contact" className="hover:text-red-900">
+            <Link href="/contact" className="hover:text-primary hover:-skew-4 transition-all duration-100">
               Contact
             </Link>
           </div>

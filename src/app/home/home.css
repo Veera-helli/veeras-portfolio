@@ -1,0 +1,18 @@
+
+#blob {
+  transition: transform 1s ease;
+}
+
+#profile {
+  transition: transform 1s ease;
+}
+
+#image-container:hover #blob {
+    transition: transform 1s ease;
+    transform: rotate(6deg);
+}
+
+#image-container:hover #profile {
+    transition: transform 1s ease;
+    transform: translate(6px, -6px);
+}
