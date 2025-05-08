@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import IntroSection from '@/components/IntroSection';
-import HighlightsSection from '@/components/HighlightsSection';
+import ProjectCarousel from '@/components/ProjectCarousel';
 import ".//home.css";
 
 export default function HomePage() {
@@ -34,8 +33,8 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div className="bg-white">
-        <HighlightsSection />
+      <div className="bg-white pt-20">
+        <ProjectCarousel />
       </div>
     </main>
   );

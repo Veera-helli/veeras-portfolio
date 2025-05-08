@@ -10,7 +10,7 @@ export default function Header() {
     <header className="bg-background sticky top-0 z-50">
       <nav className="max-w-4xl mx-auto px-2 py-2">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-montserrat">
+          <Link href="/" className="text-xl font-montserrat hover:-skew-4 transition-all duration-200">
             <Image src="/images/logo.png" alt="Veera Ihalainen" width={52} height={52} />
           </Link>
           
@@ -29,17 +29,19 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6 font-semibold text-red-950">
-            <Link href="/" className="hover:text-primary hover:-skew-4  transition-all duration-100">
+            <Link href="/" className="py-2 hover:text-primary hover:-skew-4  transition-all duration-100">
               Home
             </Link>
+            {/*
             <Link href="/about" className="hover:text-primary hover:-skew-4 transition-all duration-100">
               About
             </Link>
-            <Link href="/projects" className="hover:text-primary hover:-skew-4  transition-all duration-100">
+            */}
+            <Link href="/projects" className="py-2 hover:text-primary hover:-skew-4 transition-all duration-100">
               Projects
             </Link>
-            <Link href="/contact" className="hover:text-primary hover:-skew-4 transition-all duration-100">
-              Contact
+            <Link href="/contact" id="contact-button" className="bg-primary text-white px-4 py-2 rounded-full hover:bg-red-800 hover:scale-105 hover:-skew-3 transition-all duration-200">
+              Get in touch!
             </Link>
           </div>
         </div>
@@ -54,6 +56,7 @@ export default function Header() {
             >
               Home
             </Link>
+            {/*
             <Link 
               href="/about" 
               className="hover:text-red-900"
@@ -61,6 +64,7 @@ export default function Header() {
             >
               About
             </Link>
+            */}
             <Link 
               href="/projects" 
               className="hover:text-red-900"

@@ -4,8 +4,7 @@
   --champagne-pink: #EED7C5;
   --ghost-white: #f4edeb;
   --thistle: #C89F9C;
-  --thistle-dark: #98726f;
-  --tropical-indigo: #9F9FED;
+  --thistle-dark: #775a58;
   --medium-slate-blue: #736CED;
   --auburn: #871D20;
   --foreground: ;
@@ -33,3 +32,10 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
+#contact-text {
+  transition: transform 0.3s ease;
+}
+
+#contact-button:hover #contact-text {
+  transform: rotate(6deg);
+}
