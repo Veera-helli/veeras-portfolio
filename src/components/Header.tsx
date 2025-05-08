@@ -40,7 +40,7 @@ export default function Header() {
             <Link href="/projects" className="py-2 hover:text-primary hover:-skew-4 transition-all duration-100">
               Projects
             </Link>
-            <Link href="/contact" id="contact-button" className="bg-primary text-white px-4 py-2 rounded-full hover:bg-red-800 hover:scale-105 hover:-skew-3 transition-all duration-200">
+            <Link href="/contact" id="contact-button" className="bg-primary text-white px-4 py-2 rounded-full hover:bg-red-800 hover:scale-105 transition-all duration-200">
               Get in touch!
             </Link>
           </div>
